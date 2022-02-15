@@ -45,28 +45,34 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon1 me-2"><img src="./images/icon-menu.svg" alt="menu"/></span>
           </button>
-          <label class="navbar-brand"><img src="./images/logo.svg" alt="lbrand ogo"/></label>
-          <div class="collapse navbar-collapse ms-4" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-0 pb-2">
-              <li class="nav-item">
-                <a class="nav-link mx-3" aria-current="page" href="#">Collections</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Men</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Women</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+          <label class="navbar-brand me-4 ms-2"><img src="./images/logo.svg" alt="lbrand ogo"/></label>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 mb-2 mb-lg-0 mt-0 pb-2">
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="#">Collections</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Men</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Women</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <a class="nav-link- pb-2 cart-icon" href="#"><img src="./images/icon-cart.svg" alt="shopping cart"/></a>
           <a class="nav-link- pb-2" href="#"><img class="user-img" src="./images/image-avatar.png" alt="user img"/></a>

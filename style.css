@@ -14,23 +14,29 @@ body {
 
 /*-----------------------Navbar------------------------------ */
 .navbar-brand {
-    /* margin-right: auto; */
     margin:.3rem auto 1.5rem 1rem;
+}
+
+.navbar-toggler1 {
+    display: none;
 }
 
 .user-img {
     width: 2.8rem;
     margin: 0 2.5rem;
-}
-
-.user-img:hover {
-    box-shadow:0 0 0 2px  hsl(26, 100%, 55%);
     border-radius: 50%;
+}
+
+.user-img:hover,
+.user-img:focus {
+    box-shadow:0 0 0 2px  hsl(26, 100%, 55%);
 
 }
 
-.nav-item:hover {
+.nav-link:hover,
+.nav-link:focus {
     color:  black;
+    font-weight: 500;
 }
 
 .nav-link {
@@ -108,6 +114,7 @@ hr {
 .product--discounted-price span {
     color:  hsl(26, 100%, 55%);
     font-weight: 600;
+    font-size: 1.3rem;
     background-color: hsl(223, 64%, 98%);
     padding: .3rem;
     border-radius: .5rem;
@@ -153,30 +160,53 @@ hr {
 
 /* -----------------------------Media queries-------------------- */
 @media screen and (max-width: 768px) {
-   .navbar-brand {
-       margin: 0 0 0 0;
+    .container-lg {
+        padding: 0;
+    }
+   
+    .offcanvas {
+        width: 50%;
+    }
+
+    .navbar-brand {
+       margin: 0;
+       padding: 0;
    }
 
-   .navbar-toggler-icon,
-   .navbar-toggler-icon:active,
-   .navbar-toggler-icon:focus {
+   .navbar-toggler1 {
+       display: block;
        border: 0;
+       background-color: transparent;
    }
 
    .cart-icon {
        margin-left: auto;
+       padding-right: 0;
+   }
+
+   .user-img {
+    margin: 0 1rem;    
    }
 
    .nav-link::before {
         top: 1.7rem;
-        transform-origin: left;
-        width: 100%;
+        transform-origin:left;
    }
    
+   .nav-link,
+   .nav-link:hover,
+   .nav-link:focus {
+       font-weight: 600;
+   }
+
+   hr {
+       display: none;
+   }
+
     .product-preview-img {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        margin-top: 0;
+        width: 100vw;
+        border-radius: 0;
     }
 
     .thumbnail-img {
@@ -186,6 +216,7 @@ hr {
     .product-details-section {
         margin-top: 0;
         padding-top: 0;
+        margin-left: 1rem;
         width: 100%;
         font-size: 1rem;
     }
