@@ -25,6 +25,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
     <link rel="stylesheet" href="./style.css" />
     
     <title>Frontend Mentor | E-commerce product page</title>
@@ -82,17 +83,29 @@
     </header>
 
     <main class="d-flex flex-wrap flex-md-nowrap">
-      <div class="product-images-section d-flex flex-column align-items-center justify-content-center">
-        <img class="product-preview-img mb-4" src="./images/image-product-1.jpg" alt="sneaker"/>
-        <div class="thumbnail-container d-flex">
-          <img class="thumbnail-img p-2 " src="./images/image-product-1-thumbnail.jpg" alt="product img"/>
-          <img class="thumbnail-img p-2 " src="./images/image-product-2-thumbnail.jpg" alt="product img"/>
-          <img class="thumbnail-img p-2 " src="./images/image-product-3-thumbnail.jpg" alt="product img"/>
-          <img class="thumbnail-img p-2 " src="./images/image-product-4-thumbnail.jpg" alt="product img"/>
+      <section class="product-images-section d-flex flex-column align-items-center justify-content-center">
+        <img id="expandedImg">
+        <img src="./images/icon-previous.svg" alt="previous" class="previous"/>
+        <img src="./images/icon-next.svg" alt="next" class="next"/>
+        <div class="thumbnail-container d-flex">          
+          <div class="row">
+            <div class="column">
+              <img src="./images/image-product-1.jpg" alt="product-pic" class="thumbnail-img" style="width:100%" onclick="expandImg(this);">
+            </div>
+            <div class="column">
+              <img src="./images/image-product-2.jpg" alt="product-pic" class="thumbnail-img" style="width:100%" onclick="expandImg(this);">
+            </div>
+            <div class="column">
+              <img src="./images/image-product-3.jpg" alt="product-pic" class="thumbnail-img" style="width:100%" onclick="expandImg(this);">
+            </div>
+            <div class="column">
+              <img src="./images/image-product-4.jpg" alt="product-pic" class="thumbnail-img" style="width:100%" onclick="expandImg(this);">
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="product-details-section">
+      <section class="product-details-section">
         <h2 class="product-details-header fw-bold fs-6">SNEAKER COMPANY</h2>
         <h1 class="product-details-title fw-bold">Fall Limited Edition Sneakers</h1>
         <p class="product-details">
@@ -110,7 +123,7 @@
           <img src="./images/icon-plus.svg" alt="plus sign" class="cart-increment"/>
         </div>
         <button class="btn btn-dark add-to-cart">Add to cart</button>
-      </div>
+      </section>
     </main>
 
     <div class="attribution">

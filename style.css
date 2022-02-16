@@ -68,20 +68,51 @@ hr {
 }
 
 /* ----------------------------Product images---------------------- */
-.product-preview-img {
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 7rem;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    border-radius: .5rem;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image */
+  #expandedImg {
     width: 70%;
     border-radius: .5rem;
     margin-top: 4rem;
-}
+    position: relative;
+  }
 
-.thugmbnail-img-container {
-    width: 75%;
-}
+  .next, 
+  .previous {
+      display: none;
+  }
 
-.thumbnail-img {
-    border-radius: 1rem;
-    width: 7rem;
-}
 
 /* ----------------------------Product details----------------------- */
 .product-details-section {
@@ -203,11 +234,33 @@ hr {
        display: none;
    }
 
-    .product-preview-img {
+   #expandedImg {
         margin-top: 0;
         width: 100vw;
         border-radius: 0;
     }
+
+    .next {
+        display: block;
+        margin-right: auto;
+        background-color: white;
+        border-radius: 50%;
+        padding: .7rem;
+        position: absolute;
+        top: 20rem;
+        right: 5%;
+      }
+    
+      .previous {
+        display: block;
+        margin-left: auto;
+        background-color: white;
+        border-radius: 50%;
+        padding: .7rem;
+        position: absolute;
+        top: 20rem;
+        left: 5%;
+      }
 
     .thumbnail-img {
         display: none;
