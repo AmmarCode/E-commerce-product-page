@@ -10,11 +10,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -35,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution-In-Progress](https://github.com/AmmarCode/E-commerce-product-page)
+- Live Site URL: [Live-Site-In-Progress](https://ammarcode.github.io/E-commerce-product-page/)
 
 ## My process
 
@@ -55,6 +51,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://ammarcode.github.io/Portfolio/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/AmmarCode)
+- Website - [Ammar's Portfolio Site](https://ammarcode.github.io/Portfolio/)
+- Frontend Mentor - [@AmmarCode](https://www.frontendmentor.io/profile/AmmarCode)
 
