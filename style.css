@@ -60,10 +60,93 @@ body {
   transform: scaleX(1);
 }
 
+.cart-icon {
+  position: relative;
+}
+
+#cart-badge {
+  background-color: hsl(26, 100%, 55%);
+}
+
 hr {
   color: hsl(0, 0%, 65%);
   height: 1px;
   margin-top: 0;
+}
+
+.cart-content-container {
+  width: 21rem;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 1px 8px gray;
+  border-radius: .5rem;
+  top: 4.7rem;
+  right: 17rem;
+  padding: 1rem;
+  background-color: white;
+  opacity: 0;
+  height: 15.5rem;
+}
+
+.cart-line {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.empty-cart {
+  opacity: 0;
+  text-align: center;
+  margin-top: 1rem;
+  color: hsl(219, 9%, 45%);
+  font-weight: 600;
+  visibility: hidden;
+}
+
+.cart-content-details {
+  margin:0;
+  opacity: 0;
+}
+
+.in-cart-product-img {
+  width: 3rem;
+  border-radius: .3rem;
+  margin: 0 .5rem 1rem 0;
+}
+
+.checkout {
+  width: 100%;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: .5rem;
+  border: none;
+  height: 3rem;
+  outline: none;
+}
+
+.checkout:hover {
+  background-color: hsl(26, 100%, 55%);
+  outline: none;
+  border: none;
+  opacity: .7;
+}
+
+.checkout:focus,
+.checkout:active {
+  background-color: hsl(26, 100%, 55%);
+  outline: 0px;
+  border: 0px;
+}
+
+.total-price {
+  font-weight: 600;
+}
+
+.delete-icon:hover {
+  cursor: pointer;
+}
+
+.active-cart {
+  opacity: 1;
+  visibility:visible ;
 }
 
 /* ----------------------------Product images---------------------- */
@@ -77,13 +160,17 @@ hr {
 
 /* Style the images inside the grid */
 .column img {
-  opacity: 0.8;
   cursor: pointer;
   border-radius: 0.5rem;
 }
 
-.column img:hover {
-  opacity: 1;
+.column img:hover,
+.active {
+  opacity: .7;
+}
+
+.active {
+  outline: 3px solid hsl(26, 100%, 55%);
 }
 
 /* Clear floats after the columns */
@@ -162,8 +249,8 @@ hr {
   border-radius: 0.5rem;
 }
 
-.cart-decrement,
-.cart-increment {
+#cart-decrement,
+#cart-increment {
   color: hsl(26, 100%, 55%);
   cursor: pointer;
   width: 1rem;
@@ -212,11 +299,11 @@ hr {
 
   .cart-icon {
     margin-left: auto;
-    padding-right: 0;
   }
 
   .user-img {
     margin: 0 1rem;
+    width: 2rem;
   }
 
   .nav-link::before {
@@ -232,6 +319,13 @@ hr {
 
   hr {
     display: none;
+  }
+
+  .cart-content-container {
+    width: 94%;
+    top: 5rem;
+    right: 1rem;
+    left: 1rem;
   }
   /* -----------------images---------------- */
 
@@ -314,4 +408,14 @@ hr {
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+/* ------------------------------Footer------------------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 5em;
+}
+.attribution a {
+  color: hsl(26, 100%, 55%);
 }

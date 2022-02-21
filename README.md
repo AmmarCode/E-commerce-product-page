@@ -31,10 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution-In-Progress](https://github.com/AmmarCode/E-commerce-product-page)
-- Live Site URL: [Live-Site-In-Progress](https://ammarcode.github.io/E-commerce-product-page/)
-
-## My process
+- Solution URL: [Solution](https://github.com/AmmarCode/E-commerce-product-page)
+- Live Site URL: [Live Site](https://ammarcode.github.io/E-commerce-product-page/)
 
 ### Built with
 
